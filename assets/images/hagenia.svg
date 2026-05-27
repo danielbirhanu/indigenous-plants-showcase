@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Hagenia">
+  <rect width="640" height="480" fill="#f3efe5"/>
+  <rect x="302" y="190" width="36" height="190" rx="14" fill="#7a5a35"/>
+  <g fill="#507d45">
+    <circle cx="250" cy="185" r="70"/><circle cx="330" cy="145" r="80"/><circle cx="410" cy="190" r="72"/><circle cx="320" cy="235" r="85"/>
+  </g>
+  <g fill="#d8a76b">
+    <circle cx="270" cy="160" r="15"/><circle cx="350" cy="200" r="15"/><circle cx="405" cy="170" r="13"/><circle cx="300" cy="245" r="14"/>
+  </g>
+  <text x="320" y="430" text-anchor="middle" font-family="Arial" font-size="30" fill="#245b38">Hagenia</text>
+</svg>

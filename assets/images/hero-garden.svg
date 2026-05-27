@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Illustrated green plant garden">
+  <rect width="1200" height="600" fill="#6f8f5b"/>
+  <path d="M0 450C170 390 340 470 520 410C760 330 900 390 1200 330V600H0Z" fill="#315f3a"/>
+  <path d="M0 520C180 470 350 550 560 500C780 450 980 500 1200 430V600H0Z" fill="#203d2a"/>
+  <g fill="#d8e7c8" opacity=".8">
+    <ellipse cx="820" cy="290" rx="34" ry="95" transform="rotate(-22 820 290)"/>
+    <ellipse cx="880" cy="280" rx="34" ry="105" transform="rotate(28 880 280)"/>
+    <ellipse cx="965" cy="325" rx="28" ry="90" transform="rotate(-35 965 325)"/>
+  </g>
+  <g fill="#a8c88a" opacity=".9">
+    <ellipse cx="180" cy="360" rx="28" ry="90" transform="rotate(24 180 360)"/>
+    <ellipse cx="235" cy="345" rx="30" ry="102" transform="rotate(-26 235 345)"/>
+    <ellipse cx="305" cy="385" rx="24" ry="82" transform="rotate(35 305 385)"/>
+  </g>
+</svg>

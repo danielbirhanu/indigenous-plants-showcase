@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="African Olive">
+  <rect width="640" height="480" fill="#eef3e9"/>
+  <path d="M315 390C325 300 325 240 300 165" stroke="#765332" stroke-width="34" stroke-linecap="round"/>
+  <g fill="#3f7447">
+    <ellipse cx="250" cy="170" rx="95" ry="70"/><ellipse cx="350" cy="135" rx="110" ry="78"/>
+    <ellipse cx="420" cy="210" rx="95" ry="68"/><ellipse cx="285" cy="235" rx="105" ry="72"/>
+  </g>
+  <g fill="#1f3f2a">
+    <circle cx="300" cy="180" r="7"/><circle cx="380" cy="220" r="7"/><circle cx="240" cy="230" r="7"/>
+  </g>
+  <text x="320" y="430" text-anchor="middle" font-family="Arial" font-size="30" fill="#245b38">African Olive</text>
+</svg>

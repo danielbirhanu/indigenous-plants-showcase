@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Enset">
+  <rect width="640" height="480" fill="#edf2df"/>
+  <rect x="295" y="245" width="50" height="145" rx="18" fill="#7a5a35"/>
+  <g fill="#4f9851" stroke="#2d6338" stroke-width="4">
+    <ellipse cx="270" cy="210" rx="50" ry="150" transform="rotate(-35 270 210)"/>
+    <ellipse cx="375" cy="210" rx="50" ry="150" transform="rotate(35 375 210)"/>
+    <ellipse cx="320" cy="175" rx="45" ry="150"/>
+  </g>
+  <text x="320" y="430" text-anchor="middle" font-family="Arial" font-size="30" fill="#245b38">Enset</text>
+</svg>

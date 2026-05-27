@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Moringa">
+  <rect width="640" height="480" fill="#f2f0df"/>
+  <rect x="304" y="170" width="32" height="210" rx="12" fill="#7a5a35"/>
+  <g fill="#4e8a52">
+    <circle cx="220" cy="170" r="58"/><circle cx="300" cy="120" r="70"/><circle cx="390" cy="160" r="64"/>
+    <circle cx="270" cy="215" r="64"/><circle cx="365" cy="230" r="58"/><circle cx="455" cy="215" r="48"/>
+  </g>
+  <g fill="#dceccf">
+    <circle cx="285" cy="145" r="8"/><circle cx="355" cy="185" r="8"/><circle cx="240" cy="205" r="7"/>
+  </g>
+  <text x="320" y="430" text-anchor="middle" font-family="Arial" font-size="30" fill="#245b38">Moringa</text>
+</svg>
