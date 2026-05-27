@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ethiopian Flora | Enset (Ensete ventricosum)</title>
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&amp;family=Manrope:wght@200..800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#ffb595",
+                        "outline-variant": "#c3c8c1",
+                        "on-primary-container": "#819986",
+                        "primary-fixed": "#d0e9d4",
+                        "on-tertiary-container": "#bd866d",
+                        "secondary-container": "#fc7127",
+                        "primary-fixed-dim": "#b4cdb8",
+                        "secondary-fixed": "#ffdbcd",
+                        "surface-tint": "#4d6453",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#7c2e00",
+                        "surface-container-low": "#f6f3f2",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#f6b99d",
+                        "on-background": "#1b1c1c",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#2d0e01",
+                        "surface-container-high": "#eae8e7",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-container": "#f0eded",
+                        "on-primary-fixed-variant": "#364c3c",
+                        "on-surface": "#1b1c1c",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#663c27",
+                        "on-surface-variant": "#434843",
+                        "outline": "#737973",
+                        "inverse-surface": "#303030",
+                        "background": "#fbf9f8",
+                        "secondary": "#a23f00",
+                        "on-primary-fixed": "#0b2013",
+                        "primary": "#061b0e",
+                        "inverse-on-surface": "#f3f0f0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#321203",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-container": "#5c2000",
+                        "surface-variant": "#e4e2e1",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary-container": "#46220f",
+                        "inverse-primary": "#b4cdb8",
+                        "primary-container": "#1b3022",
+                        "on-secondary-fixed": "#351000",
+                        "surface": "#fbf9f8",
+                        "surface-container-highest": "#e4e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "caption": ["Manrope"],
+                        "headline-md": ["Literata"],
+                        "headline-lg-mobile": ["Literata"],
+                        "headline-lg": ["Literata"],
+                        "label-md": ["Manrope"],
+                        "display-lg": ["Literata"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translatey(20px);
+            transition: all 0.6s ease-out
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translatey(0)
+        }
+    </style>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translatey(20px);
+            transition: all 0.6s ease-out
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translatey(0)
+        }
+    </style>
+</head>
+
+<body class="text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed bg-white">
+    <!-- TopNavBar -->
+    <header
+        class="w-full top-0 sticky z-50 bg-surface dark:bg-primary-container border-b border-outline-variant/20 h-20 shadow-sm">
+        <div class="flex justify-between items-center px-gutter max-w-max-width mx-auto h-full">
+            <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
+                Ethiopian Flora
+            </div>
+            <nav class="hidden md:flex items-center gap-8 h-full">
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="index.html">Home</a>
+                <a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary h-full flex items-center"
+                    href="browseplant.html">Browse</a>
+
+            </nav>
+            <div class="flex items-center gap-4">
+                <div
+                    class="hidden sm:flex items-center bg-surface-container-high px-3 py-1.5 rounded-full border border-outline-variant/10">
+                    <span class="material-symbols-outlined text-outline mr-2" data-icon="search">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-body-md font-body-md w-32 md:w-48"
+                        placeholder="Search species..." type="text">
+                </div>
+                <button
+                    class="font-body-md text-body-md bg-primary text-on-primary px-6 py-2 rounded-lg hover:bg-primary-container transition-colors shadow-sm"
+                    onclick="window.location.href='Login.html'">Sign In</button>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-max-width mx-auto px-gutter py-12">
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center gap-2 mb-8 text-on-surface-variant font-label-md text-label-md">
+            <a class="hover:text-primary transition-colors" href="#">Archive</a>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+            <a class="hover:text-primary transition-colors" href="#">Musaceae</a>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+            <span class="text-secondary font-bold">Enset</span>
+        </nav>
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 scroll-reveal visible">
+            <div class="lg:col-span-8 relative">
+                <div class="overflow-hidden rounded-xl aspect-[16/10] group border border-outline-variant/20 shadow-md">
+                    <img alt="Ensete ventricosum in its natural habitat"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="A lush, cinematic photograph of a towering Enset plant, also known as the false banana, standing majestically in the misty Ethiopian Highlands. The plant's massive, broad green leaves reach toward a soft, overcast sky, illuminated by diffused morning light. The background features rolling green hills and traditional thatched-roof dwellings, creating a serene, scholarly, and culturally rich atmosphere. The overall color palette is dominated by deep forest greens, earthy browns, and soft ivory tones, reflecting a premium botanical archive aesthetic."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV2tJ6nKiM2BiquApYv0Ddm3-LegnZP_GppFjURZ8rH5nwi5vQfdvqqEtIPxmn__khypUclTMJ11ZfgbibDeCgDJeYW3fFFDNsOmpd1Ej-wBR6Lg1fbtTf_sFDKaSllXCpjeSlUZsJWHLTCQmZyQhoIdFYjXHoW14B4KbY8WOEk0bftJ1cv98Uxar-F9aV9sS9j0EIRkoyuk__37-hW8sPL4731VYpScNCjr7UU2UFzTBbNKGk-_r_q4OV8zagM0lZC8tOKlA">
+                    <div
+                        class="absolute top-4 left-4 bg-primary/90 text-on-primary px-4 py-1 rounded-full text-label-md font-label-md flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">verified</span> Endemic Species
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-4 flex flex-col justify-center">
+                <span class="text-secondary font-label-md text-label-md tracking-widest uppercase mb-4">Scientific
+                    Profile</span>
+                <h1 class="font-display-lg text-display-lg text-primary mb-2 leading-tight">Enset</h1>
+                <p class="font-headline-md text-headline-md italic text-on-surface-variant mb-6">Ensete ventricosum</p>
+                <div class="h-1 w-20 bg-secondary-container mb-8"></div>
+                <p class="font-body-lg text-body-lg text-on-surface leading-relaxed mb-8">
+                    Often mistaken for the banana tree, the Enset is the "Tree against Hunger." A cornerstone of
+                    Ethiopian food security and cultural identity, this resilient perennial supports over 20 million
+                    people in the southern highlands.
+                </p>
+                <div class="flex gap-4">
+                    <div class="flex-1 bg-surface-container-low p-4 rounded-lg border-l-4 border-primary">
+                        <p class="text-caption font-caption text-on-surface-variant uppercase tracking-tighter">Status
+                        </p>
+                        <p class="text-body-md font-body-md font-bold text-primary">Least Concern</p>
+                    </div>
+                    <div class="flex-1 bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary">
+                        <p class="text-caption font-caption text-on-surface-variant uppercase tracking-tighter">
+                            Elevation</p>
+                        <p class="text-body-md font-body-md font-bold text-primary">1,600 - 3,100m</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content & Sidebar -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start scroll-reveal visible">
+            <!-- Body Text -->
+            <div class="lg:col-span-8 space-y-12">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary" data-icon="eco">eco</span> Botanical
+                        Characteristics
+                    </h2>
+                    <div class="prose prose-lg text-on-surface max-w-none font-body-md leading-relaxed space-y-4">
+                        <p class="">
+                            Enset is a massive monocarpic evergreen perennial that can grow up to 6–12 meters in height.
+                            Though it resembles the banana (Musa), it differs significantly in its growth cycle and
+                            fruit production. The "trunk" is actually a pseudostem formed by the tightly overlapping
+                            leaf sheaths.
+                        </p>
+                        <p class="">
+                            Its leaves are enormous, paddle-shaped, and can reach lengths of 5 meters, featuring a
+                            distinct reddish midrib in many Highland varieties. Unlike the banana, the fruits are small,
+                            leathery, and typically unpalatable. The true value lies within the massive corm and the
+                            pseudo-stem, which store incredible amounts of starch.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-primary-container p-8 rounded-xl text-on-primary relative overflow-hidden">
+
+                    <h3 class="font-headline-md text-headline-md mb-4 text-primary-fixed flex items-center gap-2">
+                        <span class="material-symbols-outlined">psychology_alt</span> Cultural Significance: The Tree
+                        against Hunger
+                    </h3>
+                    <p class="font-body-md text-on-primary-container mb-0 italic">
+                        "Enset is the backbone of our survival. When the rains fail and the grains wither, the Enset
+                        stands tall, waiting to feed us." — Southern Highland Proverb.
+                    </p>
+                    <div class="mt-6 font-body-md space-y-3">
+                        <p class="">Its unique ability to be harvested at any growth stage and stored for years in
+                            underground pits makes it the ultimate drought-resistant crop. Traditionally, it is
+                            processed into <strong>Kocho</strong> (fermented bread), <strong>Bulla</strong> (liquid
+                            starch), and <strong>Amicho</strong> (boiled corm).</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary" data-icon="landscape">landscape</span>
+                        Habitat &amp; Ecology
+                    </h2>
+                    <p class="font-body-md text-on-surface leading-relaxed mb-6">
+                        Endemic to the Ethiopian Highlands, Enset thrives in moist, high-altitude regions. It prefers
+                        well-drained volcanic soils and moderate temperatures. Beyond its nutritional value, the plant
+                        plays a vital ecological role by preventing soil erosion on steep slopes and maintaining soil
+                        moisture through its large, shading canopy.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden h-48">
+                            <img alt="Botanical detail" class="w-full h-full object-cover"
+                                data-alt="A close-up photograph showcasing the intricate details of an Enset leaf's red midrib and emerald green veins. The lighting is crisp and natural, highlighting the organic textures and patterns of the plant. The style is that of a scientific botanical illustration but captured through a high-end macro lens. The background is a soft, out-of-focus blur of lush vegetation."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtMLiQH-wxAdbRbbQHXSNPnHr0RvEOx--SNOS-6Tak60pus0orzHiLfl5kKRN0KkPKpLUreU-9ucwuS98JtJXmfejh2vBgPuRdqK2oTXEg6ZsKQO7Yno2QbzJrknjrUYJkanotS5LH5bhsVs1kR12VcpsNJPKEHUsRwEXsK2CsP8MYCzqgYiv60u3CceLcJ9FoilbqYDg02jXF2Tx1RvRkb9IuBaDx9THS61cOc67_YDoYNDc_s-7xbocpN-Xp4oY2j05m80s">
+                        </div>
+                        <div class="rounded-lg overflow-hidden h-48">
+                            <img alt="Ethiopian Highlands" class="w-full h-full object-cover"
+                                data-alt="A landscape view of a traditional Ethiopian home garden, known as 'Desta,' where Enset plants are carefully cultivated alongside coffee and spices. The scene is bathed in the golden hour light of late afternoon, creating long shadows and a warm, inviting atmosphere. The composition emphasizes the harmony between the natural environment and traditional agricultural practices."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1186HHBhpnrK5a1E-LQbRj1WEJaTZ5YUp8xCqIKmCtMwdDMn-rEeVLr0OTfY4O8iLUW6w-23O4W8V-lbkTQGICKBfR7OS-lhuljs1cRCSPoKgS3k1kXyap7nytHwYz568_FtP1KBvnoPieqbqSA61DSErwkdxTcoqHFz5X_vKP2hRkB4AtiVMsm6GZuk0Zq0uqNeOFyIdY2IdHY3vwluaPQYT3Tsc8Qtk19dtodI_fRst_0ObpkIpbnV5VIlVqLapU8shmCA">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Quick Facts Sidebar -->
+            <aside class="lg:col-span-4 sticky top-28 space-y-8">
+                <div class="bg-surface-container border border-outline-variant/30 rounded-xl p-8 shadow-sm">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">info</span> Quick Facts
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="flex flex-col border-b border-outline-variant/10 pb-4">
+                            <span
+                                class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Scientific
+                                Name</span>
+                            <span class="font-body-md font-bold text-primary italic">Ensete ventricosum</span>
+                        </li>
+                        <li class="flex flex-col border-b border-outline-variant/10 pb-4">
+                            <span
+                                class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Common
+                                Names</span>
+                            <span class="font-body-md font-bold text-primary">False Banana, Ethiopian Banana</span>
+                        </li>
+                        <li class="flex flex-col border-b border-outline-variant/10 pb-4">
+                            <span
+                                class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Traditional
+                                Uses</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span
+                                    class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-caption font-label-md">Food</span>
+                                <span
+                                    class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-caption font-label-md">Fiber</span>
+                                <span
+                                    class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-caption font-label-md">Medicine</span>
+                                <span
+                                    class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-caption font-label-md">Roofing</span>
+                            </div>
+                        </li>
+                        <li class="flex flex-col">
+                            <span
+                                class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Growth
+                                Cycle</span>
+                            <span class="font-body-md font-bold text-primary">8–15 Years to Maturity</span>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-tertiary-fixed text-on-tertiary-fixed p-8 rounded-xl border border-tertiary-container/10">
+                    <span class="material-symbols-outlined text-tertiary mb-2"
+                        style="font-variation-settings: 'FILL' 1;">warning</span>
+                    <h4 class="font-label-md text-label-md font-bold uppercase mb-2">Conservation Note</h4>
+                    <p class="font-caption text-caption leading-relaxed">
+                        While categorized as Least Concern, the genetic diversity of Enset is under threat from land-use
+                        changes and bacterial wilt disease. Preservation of wild varieties is critical for future
+                        resilience.
+                    </p>
+                    <button
+                        class="mt-6 text-tertiary font-label-md underline underline-offset-4 hover:text-secondary-container transition-colors">Support
+                        Conservation</button>
+                </div>
+            </aside>
+        </section>
+        <!-- Related Plants Section -->
+        <section class="mt-24 scroll-reveal visible">
+            <div class="flex items-end justify-between mb-8">
+                <div>
+                    <span class="text-secondary font-label-md text-label-md tracking-widest uppercase">Explore
+                        More</span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mt-2">Related Flora</h2>
+                </div>
+                <a class="font-body-md text-primary hover:text-secondary transition-colors flex items-center gap-1"
+                    href="#">
+                    View Archive <span class="material-symbols-outlined">arrow_right_alt</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Related 1 -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="aspect-[4/5] rounded-xl overflow-hidden mb-4 border border-outline-variant/10 shadow-sm relative">
+                        <img alt="Coffea arabica"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            data-alt="A detailed botanical photograph of a coffee plant branch, Coffea arabica, with glossy dark green leaves and clusters of bright red cherries. The background is a soft-focus mountain landscape under a clear blue sky. The lighting is sharp and natural, emphasizing the texture of the leaves and the vibrant color of the fruit. This image maintains the scholarly yet warm botanical archive style."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJwOhNply_ufX59cZggU0Gk_k3jnkCED7-i60MR_iBg09_pLTEFN-EYrTwdkS4OwEixvCLe9gWCuYVs66DczbnseTdudfYSaZMnEg7etNAN6aOxu0UdOOOVjqxV7WvdzKPUY2ReavsN2hfQtiDsDSHZzL66j5z9nYa_V2CHpnpxfAu-GixlEq5TVR90YbmHm_W3nPtSdC63MxjD6BZTBLKNlMbIdGIbkovBKIW9b_wUDXyd0V05qGQm8-jaE12qWDOtRsAGIg">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </div>
+                    <p class="text-caption font-label-md text-secondary uppercase tracking-widest">Rubiaceae</p>
+                    <h3 class="font-headline-md text-headline-md text-primary">Coffea arabica</h3>
+                    <p class="font-body-md text-on-surface-variant">The source of the world's finest coffee, native to
+                        the highlands.</p>
+                </div>
+                <!-- Related 2 -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="aspect-[4/5] rounded-xl overflow-hidden mb-4 border border-outline-variant/10 shadow-sm relative">
+                        <img alt="Hagenia abyssinica"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            data-alt="A serene landscape featuring the Hagenia abyssinica, a iconic high-altitude tree of the Ethiopian mountains. The tree is characterized by its twisted trunk and feathery, compound leaves. The scene is set against a backdrop of mist-covered peaks, with soft, cool lighting. The visual style is artistic and documentary, reflecting the preservation of natural heritage and cultural importance."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP69aiGvS1w8R9jQ0m1vRIAGaTES8jUTUXD4PV9XmU8LqivYRcMwabLGkU4-OidG7auwzca33aJ-169CbmBCeQWlIuEv4RZKoffgpdgEi-IVI7OIKasbfdF_S98GMqrMQj3qa2qSJwMdml8wc0zAvaLq1a5flUOoyGORcv9wy4eLLriG7Zo9A0Hkixevl7eC9jXqMw0_YMe-qj7AjVl3l4TI7_1adE_H-iFNpVMTn073VQ6687eRAKTwkIlGXTvmkb2n-cb4M">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </div>
+                    <p class="text-caption font-label-md text-secondary uppercase tracking-widest">Rosaceae</p>
+                    <h3 class="font-headline-md text-headline-md text-primary">Hagenia abyssinica</h3>
+                    <p class="font-body-md text-on-surface-variant">A vital medicinal tree known locally as 'Kosso'.</p>
+                </div>
+                <!-- Related 3 -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="aspect-[4/5] rounded-xl overflow-hidden mb-4 border border-outline-variant/10 shadow-sm relative">
+                        <img alt="Aloe berhana"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            data-alt="A striking vertical composition of an Aloe berhana, an endemic Ethiopian aloe species, showcasing its sharp, succulent leaves and vibrant orange flower spikes. The plant is set in a rocky highland terrain under bright, direct sunlight that creates dramatic shadows. The aesthetic is clean, modern, and focused on botanical precision within a cultural context."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK6iYOJHKsNfz_hxoJssbmisXF2pTvYDPBY8gudjYJ_0pAXKgJB1LljnK3NrgVMlOMRpXYUcgoNm7LHa_tTvvGgvhxALjZCpnX3FgzDXcc8_iSYkGHYWHye5WrhWeviXQLVSkgl_Tst51oVPjfJ7AHvg2b5yoeBc4hlqXWX4kuPF1KaxhTQnHRPFlKVyuBgnvP444bAjeA9Eyw89VwA7DncevVywvMhOjn0Pm6dOU8Djq7AcJsL7xUFwQf7KoMEPabb5B_Do0">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </div>
+                    <p class="text-caption font-label-md text-secondary uppercase tracking-widest">Asphodelaceae</p>
+                    <h3 class="font-headline-md text-headline-md text-primary">Aloe berhana</h3>
+                    <p class="font-body-md text-on-surface-variant">A striking endemic succulent found in the northern
+                        escarpments.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full mt-auto bg-surface-container-low dark:bg-primary-container border-t border-outline-variant/15">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-base px-gutter py-12 max-w-max-width mx-auto">
+            <div>
+                <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4">Ethiopian Flora
+                </div>
+                
+                    <p class="font-caption text-caption text-on-surface-variant">
+                © 2026 Ethiopian Flora. Preserving Natural Heritage.
+            </p>
+            
+                <div class="flex gap-4 mt-4">
+                    <a class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-all"
+                        href="#">public</a>
+                    <a class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-all"
+                        href="#">mail</a>
+                    <a class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-all"
+                        href="#">science</a>
+                </div>
+            </div>
+            <div class="grid">
+                    <h5 class="font-label-md text-label-md mb-4 text-primary">Archive</h5>
+                    <ul class="space-y-2">
+                        <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="{{DATA:SCREEN:SCREEN_2}}">About Us</a></li>
+                        <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="{{DATA:SCREEN:SCREEN_7}}">Browse</a></li>
+                       <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="#">Terms of Service</a></li>
+                        <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="{{DATA:SCREEN:SCREEN_5}}">Contact</a></li>
+                    </ul>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Intersection Observer for Scroll Reveals
+        const observerOptions = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Interaction Micro-effects
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => el.style.opacity = '0.8');
+            el.addEventListener('mouseup', () => el.style.opacity = '1');
+            el.addEventListener('mouseleave', () => el.style.opacity = '1');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

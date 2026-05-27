@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:wght@400;600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#ffb595",
+                        "outline-variant": "#c3c8c1",
+                        "on-primary-container": "#819986",
+                        "primary-fixed": "#d0e9d4",
+                        "on-tertiary-container": "#bd866d",
+                        "secondary-container": "#fc7127",
+                        "primary-fixed-dim": "#b4cdb8",
+                        "secondary-fixed": "#ffdbcd",
+                        "surface-tint": "#4d6453",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#7c2e00",
+                        "surface-container-low": "#f6f3f2",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#f6b99d",
+                        "on-background": "#1b1c1c",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#2d0e01",
+                        "surface-container-high": "#eae8e7",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-container": "#f0eded",
+                        "on-primary-fixed-variant": "#364c3c",
+                        "on-surface": "#1b1c1c",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#663c27",
+                        "on-surface-variant": "#434843",
+                        "outline": "#737973",
+                        "inverse-surface": "#303030",
+                        "background": "#fbf9f8",
+                        "secondary": "#a23f00",
+                        "on-primary-fixed": "#0b2013",
+                        "primary": "#061b0e",
+                        "inverse-on-surface": "#f3f0f0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#321203",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-container": "#5c2000",
+                        "surface-variant": "#e4e2e1",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary-container": "#46220f",
+                        "inverse-primary": "#b4cdb8",
+                        "primary-container": "#1b3022",
+                        "on-secondary-fixed": "#351000",
+                        "surface": "#fbf9f8",
+                        "surface-container-highest": "#e4e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "caption": ["Manrope"],
+                        "headline-md": ["Literata"],
+                        "headline-lg-mobile": ["Literata"],
+                        "headline-lg": ["Literata"],
+                        "label-md": ["Manrope"],
+                        "display-lg": ["Literata"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .botanical-texture {
+            background-image: radial-gradient(#c3c8c1 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+
+        .pattern-accent {
+            background: repeating-linear-gradient(45deg, #a23f00, #a23f00 2px, transparent 2px, transparent 8px);
+        }
+
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-surface font-body-md min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+    <!-- TopNavBar -->
+    <header
+        class="w-full top-0 sticky z-50 bg-surface dark:bg-primary-container border-b border-outline-variant/20 h-20 shadow-sm">
+        <div class="flex justify-between items-center px-gutter max-w-max-width mx-auto h-full">
+            <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
+                Ethiopian Flora
+            </div>
+            <nav class="hidden md:flex items-center gap-8 h-full">
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="index.html">Home</a>
+                <a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary h-full flex items-center"
+                    href="#">Browse</a>
+
+            </nav>
+            <div class="flex items-center gap-4">
+                <div
+                    class="hidden sm:flex items-center bg-surface-container-high px-3 py-1.5 rounded-full border border-outline-variant/10">
+                    <span class="material-symbols-outlined text-outline mr-2" data-icon="search">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-body-md font-body-md w-32 md:w-48"
+                        placeholder="Search species..." type="text">
+                </div>
+                <button
+                    class="font-body-md text-body-md bg-primary text-on-primary px-6 py-2 rounded-lg hover:bg-primary-container transition-colors shadow-sm"
+                    onclick="window.location.href='Login.html'">Sign In</button>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <!-- Hero Search Section -->
+        <section class="relative py-16 md:py-24 overflow-hidden border-b border-outline-variant/10">
+            <div class="absolute inset-0 botanical-texture pointer-events-none"></div>
+            <div class="max-w-max-width mx-auto px-gutter relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="font-display-lg text-display-lg text-primary mb-6">Explore the <span
+                            class="text-secondary">Green Heritage</span> of Ethiopia</h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        A comprehensive digital archive of Ethiopia's diverse flora, from the high Afroalpine plateaus
+                        to the lush Rift Valley basins.
+                    </p>
+                    <!-- Search Bar -->
+                    <div class="relative group">
+                        <div class="absolute inset-y-0 left-5 flex items-center pointer-events-none text-outline">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <input
+                            class="w-full pl-14 pr-6 py-5 bg-surface-container-low border-b-2 border-outline/30 focus:border-secondary focus:ring-0 transition-all font-body-md text-body-lg rounded-t-xl outline-none shadow-sm group-hover:bg-surface-container"
+                            placeholder="Search by common name, scientific name, or region..." type="text">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Filters & Gallery -->
+        <section class="py-12 max-w-max-width mx-auto px-gutter">
+            <div class="flex flex-col md:flex-row gap-gutter">
+                <!-- Sidebar Filters -->
+                <aside class="w-full md:w-64 shrink-0 space-y-10">
+                    <div>
+                        <h3 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Region
+                        </h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Highlands</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Rift
+                                    Valley</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Lowlands</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Afar
+                                    Depression</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Plant Type
+                        </h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Medicinal</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Edible</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Ornamental</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary-fixed"
+                                    type="checkbox">
+                                <span
+                                    class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Endemic</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pt-6 border-t border-outline-variant/20">
+                        <button
+                            class="w-full py-3 bg-primary-container text-on-primary-container rounded-lg font-label-md hover:bg-opacity-80 transition-all flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-[18px]">filter_alt_off</span>
+                            Clear Filters
+                        </button>
+                    </div>
+                </aside>
+                <!-- Gallery Grid -->
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end mb-8">
+                        <div>
+                            <p class="font-caption text-caption text-outline mb-1 uppercase tracking-tighter">Archive
+                                Catalog</p>
+                            <h2 class="font-headline-lg text-headline-lg text-primary">Found 4 Species</h2>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="font-label-md text-on-surface-variant">Sort by:</span>
+                            <select
+                                class="bg-transparent border-none font-label-md text-primary focus:ring-0 cursor-pointer">
+                                <option>A-Z</option>
+                                <option>Recently Added</option>
+                                <option>Endemicity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Bento-ish Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <!-- Enset Card -->
+                        <article
+                            class="group bg-surface-container-lowest border border-outline-variant/15 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col">
+                            <div class="relative h-72 overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="A lush, vibrant Ensete ventricosum or Ethiopian banana plant with massive, broad green leaves featuring a prominent reddish-purple central vein. The lighting is soft and natural, suggesting an organic highland garden setting. The overall style is photographic and scholarly, emphasizing the plant's texture and botanical details in a modern, bright environment."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4u6l8k0VOsxtDn935Nz_kC_IxEnon2bRtetnZWzxSZBYjECMx75iJSD010HPuLWR1qdBCl99rz8GWZk4vXMaEORUEUBDUi8-tZRcvu2C-PmqvoXFeJvL8u_1Hq-I3i6YA0j56uHixNATv-l8MQy4qNYwIgKB9kAZpJnCZUvS0Wck8B23jEiyWnrqzkqNUQJ2Rd7734BK1KeM_jXAgrc_c8kmlN4gk5cVLA7U5aFrnatQxa-lAig6J-6gF8OLg3cBc8iPL5ZY">
+                                <div class="absolute top-4 left-4 flex gap-2">
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Edible</span>
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Highlands</span>
+                                </div>
+                            </div>
+                            <div class="p-8 relative">
+                                <div class="absolute top-0 left-0 right-0 h-1 pattern-accent opacity-20"></div>
+                                <h3 class="font-headline-md text-headline-md text-primary mb-1">Enset</h3>
+                                <p class="italic font-body-md text-on-surface-variant mb-4">Ensete ventricosum</p>
+                                <div class="flex items-center gap-2 text-outline mb-6">
+                                    <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    <span class="text-caption font-label-md">Southern Highlands</span>
+                                </div>
+                                <button
+                                    class="mt-auto flex items-center gap-2 text-secondary font-label-md hover:gap-4 transition-all">
+                                    View Archive Details <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Coffee Card -->
+                        <article
+                            class="group bg-surface-container-lowest border border-outline-variant/15 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col">
+                            <div class="relative h-72 overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="Close up of a Coffea arabica branch with glossy deep green leaves and bright red ripe coffee cherries. The sunlight filters through the canopy in a dappled effect, creating a warm and organic atmosphere. The style is detailed and elegant, focusing on the botanical precision of the fruit and foliage in a clean, high-end botanical archive style."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA67YsMOSHKf87qt_lEAxabIKHSQXqh5Ai49gieZTb44ayUBZGUgGZZa8HEza4OalzPEuh7FIBPhYhjUhOzKWYmgNgCwIeINIujcWSDZ-5hP65xeE511RswgAlrhocZ7NwyNwhIDkjQPnlqdTdzijsIF-xY8xVdRhwGOqWBLw5d8lPSWWx5D-Gh9cSknrChyqCB2FO2UwC3KMb1-7EV6ukCT9Ukdn8cuBEtupiEtAy1h-l_ZI8GDmg3384uLoFvKCY7ldWABgs">
+                                <div class="absolute top-4 left-4 flex gap-2">
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Edible</span>
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Afromontane</span>
+                                </div>
+                            </div>
+                            <div class="p-8 relative">
+                                <div class="absolute top-0 left-0 right-0 h-1 pattern-accent opacity-20"></div>
+                                <h3 class="font-headline-md text-headline-md text-primary mb-1">Coffee</h3>
+                                <p class="italic font-body-md text-on-surface-variant mb-4">Coffea arabica</p>
+                                <div class="flex items-center gap-2 text-outline mb-6">
+                                    <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    <span class="text-caption font-label-md">Kaffa, Oromia</span>
+                                </div>
+                                <button
+                                    class="mt-auto flex items-center gap-2 text-secondary font-label-md hover:gap-4 transition-all">
+                                    View Archive Details <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Hagenia Card -->
+                        <article
+                            class="group bg-surface-container-lowest border border-outline-variant/15 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col">
+                            <div class="relative h-72 overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="A majestic Hagenia abyssinica tree also known as Kosso standing tall in an Ethiopian mountain landscape. The tree features beautiful compound leaves and characteristic hanging clusters of pinkish-red flowers. The lighting is crisp mountain air daylight, conveying a serene and lofty atmosphere. The visual style is focused on the grandeur of the alpine flora."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVzw8CRUrmsNZQSWDTr2tDdcoNppUPw8-tH_It4QMRKXL5zIX8g5ogdnEAJwWW7lfpYSdt9y038VMEULd6VZd2oPF0hw-rekSXUAST64Znz9zlbMKH09dwJUzplMybYBSRJad9CsvbbM-C7S80nZZ0m8s0Xw_di3Xpw_bPGHOX84N3knAv_d27BRyvgAySFvOHZxnsX2c-XtlGGcFUU5m4DExI1CtKfXeV0bGmQD-U_Klj6zNYOL6A7XPW2_9kQH6xjxM6i8E">
+                                <div class="absolute top-4 left-4 flex gap-2">
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Medicinal</span>
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Highlands</span>
+                                </div>
+                            </div>
+                            <div class="p-8 relative">
+                                <div class="absolute top-0 left-0 right-0 h-1 pattern-accent opacity-20"></div>
+                                <h3 class="font-headline-md text-headline-md text-primary mb-1">Kosso</h3>
+                                <p class="italic font-body-md text-on-surface-variant mb-4">Hagenia abyssinica</p>
+                                <div class="flex items-center gap-2 text-outline mb-6">
+                                    <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    <span class="text-caption font-label-md">Simien Mountains</span>
+                                </div>
+                                <button
+                                    class="mt-auto flex items-center gap-2 text-secondary font-label-md hover:gap-4 transition-all">
+                                    View Archive Details <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Moringa Card -->
+                        <article
+                            class="group bg-surface-container-lowest border border-outline-variant/15 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col">
+                            <div class="relative h-72 overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="A detailed view of Moringa stenopetala, often called the African Moringa, with its unique bulbous trunk and delicate, compound feathery leaves. The setting is a semi-arid Rift Valley landscape with warm, golden hour lighting highlighting the plant's resilient texture. The style is clean and informative, capturing the essence of Ethiopian endemic drought-resistant species."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGZrKWV2lfw_lMJLDJCWvmMnr9fiQmkxPlrQE4PbfxL3gqv8xq_eCMV4GiduJTuy2hPoFrpVXdtu7CX-CGimKsJKy1u0HHZ3333d-8BEnmneyKmGPvVNLcRqT8qgjow42P6qm6W9ELBkmoo4YY9GWi0dhKgg79e0Y6CqLX17ojxkbuW9Ude7k4Yb9J9uldHXoqVQ8DWpHE8eDQwedEPmCdDXHDlgkNN9kP82r-x6_qXrDMdH_HZGAs6uIgXZGN24pG0CNMQHo">
+                                <div class="absolute top-4 left-4 flex gap-2">
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Endemic</span>
+                                    <span
+                                        class="bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-caption font-label-md text-primary-container border border-primary/10">Rift
+                                        Valley</span>
+                                </div>
+                            </div>
+                            <div class="p-8 relative">
+                                <div class="absolute top-0 left-0 right-0 h-1 pattern-accent opacity-20"></div>
+                                <h3 class="font-headline-md text-headline-md text-primary mb-1">Moringa</h3>
+                                <p class="italic font-body-md text-on-surface-variant mb-4">Moringa stenopetala</p>
+                                <div class="flex items-center gap-2 text-outline mb-6">
+                                    <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    <span class="text-caption font-label-md">Konso Highlands</span>
+                                </div>
+                                <button
+                                    class="mt-auto flex items-center gap-2 text-secondary font-label-md hover:gap-4 transition-all">
+                                    View Archive Details <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="mt-16 flex justify-center items-center gap-4">
+                        <button
+                            class="p-2 border border-outline-variant rounded-lg hover:bg-surface-container-low disabled:opacity-30"
+                            disabled="">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <span class="font-label-md text-primary">Page 1 of 24</span>
+                        <button class="p-2 border border-outline-variant rounded-lg hover:bg-surface-container-low">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full mt-auto bg-surface-container-low dark:bg-primary-container border-t border-outline-variant/15">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-base px-gutter py-12 max-w-max-width mx-auto">
+            <div>
+                <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4">Ethiopian Flora
+                </div>
+                <p
+                    class="font-caption text-caption text-on-surface-variant dark:text-on-primary-container max-w-xs mb-6">
+                    © 2024 Ethiopian Botanical Archive. Preserving natural heritage through research, documentation, and
+                    conservation.
+                </p>
+                <div class="flex gap-4">
+                    <a class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-all"
+                        href="#">public</a>
+                    <a class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-all"
+                        href="#">mail</a>
+                    <a class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-all"
+                        href="#">science</a>
+                </div>
+            </div>
+            <div class="grid">
+                    <h5 class="font-label-md text-label-md mb-4 text-primary">Archive</h5>
+                    <ul class="space-y-2">
+                        <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="{{DATA:SCREEN:SCREEN_2}}">About Us</a></li>
+                        <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="{{DATA:SCREEN:SCREEN_7}}">Browse</a></li>
+                       <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="#">Terms of Service</a></li>
+                        <li class=""><a
+                                class="font-caption text-caption text-on-surface-variant hover:text-secondary-container transition-all"
+                                href="{{DATA:SCREEN:SCREEN_5}}">Contact</a></li>
+                    </ul>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simple search focus effect
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.classList.add('scale-[1.01]');
+            searchInput.parentElement.classList.add('shadow-md');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.classList.remove('scale-[1.01]');
+            searchInput.parentElement.classList.remove('shadow-md');
+        });
+
+        // Sticky Header shrink effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('h-16');
+                header.classList.remove('h-20');
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.add('h-20');
+                header.classList.remove('h-16');
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
